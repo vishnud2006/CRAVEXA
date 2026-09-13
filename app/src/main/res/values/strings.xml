@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">CRAVEXA</string>
+    <string name="tagline">CRAVE BETTER</string>
+    
+    <!-- Onboarding Strings -->
+    <string name="onboarding_skip">Skip</string>
+    <string name="onboarding_next">Next</string>
+    <string name="onboarding_get_started">Get Started</string>
+    
+    <string name="onboarding_title_1">Discover Authentic Homemade Food</string>
+    <string name="onboarding_desc_1">Handcrafted pickles, freshly ground spices, traditional sweets, and artisanal snacks made with time-tested recipes.</string>
+    
+    <string name="onboarding_title_2">Empower Passionate Food Creators</string>
+    <string name="onboarding_desc_2">Support dedicated home chefs and cottage culinary artisans by giving them a direct platform to reach food lovers.</string>
+    
+    <string name="onboarding_title_3">Explore Regional Specialties</string>
+    <string name="onboarding_desc_3">From North to South, East to West—discover authentic regional delicacies and festive food hampers delivered to your doorstep.</string>
+    
+    <string name="onboarding_title_4">Welcome to CRAVEXA</string>
+    <string name="onboarding_desc_4">Craving real homemade flavors made with pure love and quality ingredients? It\'s time to CRAVE BETTER.</string>
+</resources>
+

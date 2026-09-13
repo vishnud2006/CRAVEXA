@@ -1,0 +1,63 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="280dp"
+    android:height="280dp"
+    android:viewportWidth="280"
+    android:viewportHeight="280">
+
+    <!-- Background Glow Circle -->
+    <path
+        android:pathData="M140,140 m-120,0 a120,120 0 1,0 240,0 a120,120 0 1,0 -240,0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="140"
+                android:centerY="140"
+                android:gradientRadius="120"
+                android:type="radial">
+                <item android:color="#332D114D" android:offset="0.0" />
+                <item android:color="#00FAF8F5" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Chef / Home Creator Hat -->
+    <path
+        android:fillColor="#2D114D"
+        android:pathData="M90,130 C70,130 65,95 90,85 C90,60 130,50 140,75 C150,50 190,60 190,85 C215,95 210,130 190,130 Z" />
+    
+    <!-- Hat Band (Orange Accent) -->
+    <path
+        android:fillColor="#FF7A00"
+        android:pathData="M85,128 L195,128 L190,142 L90,142 Z" />
+
+    <!-- Loving Creator / Cooking Pot Base -->
+    <path
+        android:fillColor="#FAF8F5"
+        android:strokeColor="#2D114D"
+        android:strokeWidth="4"
+        android:pathData="M80,165 C80,215 110,235 140,235 C170,235 200,215 200,165 Z" />
+
+    <!-- Pot Handles -->
+    <path
+        android:strokeColor="#2D114D"
+        android:strokeWidth="5"
+        android:pathData="M80,180 C65,180 65,200 80,200" />
+    <path
+        android:strokeColor="#2D114D"
+        android:strokeWidth="5"
+        android:pathData="M200,180 C215,180 215,200 200,200" />
+
+    <!-- Aroma / Food Steam with Hearts -->
+    <path
+        android:fillColor="#FF7A00"
+        android:pathData="M140,175 C140,175 130,162 122,172 C114,182 126,194 140,204 C154,194 166,182 158,172 C150,162 140,175 140,175 Z" />
+
+    <!-- Floating Sparkles of Culinary Magic -->
+    <path
+        android:fillColor="#FFB300"
+        android:pathData="M65,75 L68,82 L75,85 L68,88 L65,95 L62,88 L55,85 L62,82 Z" />
+    <path
+        android:fillColor="#FFB300"
+        android:pathData="M220,110 L223,117 L230,120 L223,123 L220,130 L217,123 L210,120 L217,117 Z" />
+</vector>
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.cravexa.CartRepositoryTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-08-31T07:29:47.004Z" hostname="NARAs-Laptop.local" time="0.046">
+  <properties/>
+  <testcase name="getCartTotal calculates total price correctly" classname="com.cravexa.CartRepositoryTest" time="0.033"/>
+  <testcase name="getCartItemCount calculates total quantities correctly" classname="com.cravexa.CartRepositoryTest" time="0.001"/>
+  <testcase name="addToCart adds new item to cart list" classname="com.cravexa.CartRepositoryTest" time="0.011"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

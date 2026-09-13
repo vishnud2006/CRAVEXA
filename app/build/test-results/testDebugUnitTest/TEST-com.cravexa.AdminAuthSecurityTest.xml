@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.cravexa.AdminAuthSecurityTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-09-01T08:29:08.838Z" hostname="NARAs-Laptop.local" time="0.071">
+  <properties/>
+  <testcase name="admin password rotation validates minimum length and mismatch" classname="com.cravexa.AdminAuthSecurityTest" time="0.062"/>
+  <testcase name="initial admin requires mandatory password change on first login" classname="com.cravexa.AdminAuthSecurityTest" time="0.002"/>
+  <testcase name="admin email authenticate assigns ADMIN role" classname="com.cravexa.AdminAuthSecurityTest" time="0.003"/>
+  <testcase name="public signup rejects ADMIN role and defaults to CUSTOMER" classname="com.cravexa.AdminAuthSecurityTest" time="0.002"/>
+  <testcase name="successful password rotation clears mustChangePassword requirement" classname="com.cravexa.AdminAuthSecurityTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

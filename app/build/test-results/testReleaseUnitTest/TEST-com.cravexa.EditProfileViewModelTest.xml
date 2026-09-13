@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.cravexa.EditProfileViewModelTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-08-31T07:29:47.115Z" hostname="NARAs-Laptop.local" time="0.014">
+  <properties/>
+  <testcase name="saveProfile with valid data triggers use case and updates state to Success" classname="com.cravexa.EditProfileViewModelTest" time="0.012"/>
+  <testcase name="saveProfile with invalid phone sets phoneError" classname="com.cravexa.EditProfileViewModelTest" time="0.001"/>
+  <testcase name="saveProfile with invalid name sets nameError" classname="com.cravexa.EditProfileViewModelTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

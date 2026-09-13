@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.cravexa.CartViewModelTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-09-01T08:29:08.946Z" hostname="NARAs-Laptop.local" time="0.06">
+  <properties/>
+  <testcase name="decrementQuantity when quantity is 1 calls removeFromCartUseCase" classname="com.cravexa.CartViewModelTest" time="0.041"/>
+  <testcase name="uiState accurately calculates subtotal, delivery fee, and total" classname="com.cravexa.CartViewModelTest" time="0.004"/>
+  <testcase name="saveForLater calls saveForLaterUseCase" classname="com.cravexa.CartViewModelTest" time="0.004"/>
+  <testcase name="removeItem calls removeFromCartUseCase" classname="com.cravexa.CartViewModelTest" time="0.002"/>
+  <testcase name="incrementQuantity calls updateCartQuantityUseCase with increased count" classname="com.cravexa.CartViewModelTest" time="0.003"/>
+  <testcase name="applyCoupon with valid code updates discount and total" classname="com.cravexa.CartViewModelTest" time="0.003"/>
+  <testcase name="clearCart calls clearCartUseCase" classname="com.cravexa.CartViewModelTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

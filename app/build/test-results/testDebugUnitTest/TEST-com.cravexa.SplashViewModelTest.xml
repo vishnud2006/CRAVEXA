@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.cravexa.SplashViewModelTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-09-01T08:29:09.542Z" hostname="NARAs-Laptop.local" time="0.016">
+  <properties/>
+  <testcase name="when onboarding completed and authenticated as ADMIN, navigate to AdminHome" classname="com.cravexa.SplashViewModelTest" time="0.011"/>
+  <testcase name="when onboarding is not completed, navigate to welcome screen" classname="com.cravexa.SplashViewModelTest" time="0.002"/>
+  <testcase name="when onboarding completed and authenticated as CUSTOMER, navigate to CustomerMain container" classname="com.cravexa.SplashViewModelTest" time="0.001"/>
+  <testcase name="when onboarding completed but unauthenticated, navigate to login screen" classname="com.cravexa.SplashViewModelTest" time="0.001"/>
+  <testcase name="when onboarding completed and authenticated as SELLER, navigate to SellerHome" classname="com.cravexa.SplashViewModelTest" time="0.001"/>
+  <testcase name="when onboarding completed but needs profile setup, navigate to profile setup screen" classname="com.cravexa.SplashViewModelTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

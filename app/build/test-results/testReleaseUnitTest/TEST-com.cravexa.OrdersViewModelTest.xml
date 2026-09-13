@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.cravexa.OrdersViewModelTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-08-31T07:29:47.202Z" hostname="NARAs-Laptop.local" time="0.012">
+  <properties/>
+  <testcase name="loadOrders with error updates state to Error" classname="com.cravexa.OrdersViewModelTest" time="0.01"/>
+  <testcase name="loadOrders with successful list updates state to Success" classname="com.cravexa.OrdersViewModelTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.cravexa.CustomerProfileViewModelTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-08-31T07:29:47.092Z" hostname="NARAs-Laptop.local" time="0.023">
+  <properties/>
+  <testcase name="logout triggers logoutUseCase and invokes callback" classname="com.cravexa.CustomerProfileViewModelTest" time="0.02"/>
+  <testcase name="profile observes customer profile from use case" classname="com.cravexa.CustomerProfileViewModelTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.cravexa.SellerProfileViewModelTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-08-31T07:29:47.461Z" hostname="NARAs-Laptop.local" time="0.021">
+  <properties/>
+  <testcase name="submitFssai with invalid 10 digit number sets fssaiError and does not call use case" classname="com.cravexa.SellerProfileViewModelTest" time="0.018"/>
+  <testcase name="saveBusinessDetails with empty name sets businessNameError" classname="com.cravexa.SellerProfileViewModelTest" time="0.001"/>
+  <testcase name="submitFssai with valid 14 digit number submits and sets Success state" classname="com.cravexa.SellerProfileViewModelTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.cravexa.CheckoutViewModelTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-09-01T08:29:09.047Z" hostname="NARAs-Laptop.local" time="0.042">
+  <properties/>
+  <testcase name="uiState auto selects default address and calculates pricing" classname="com.cravexa.CheckoutViewModelTest" time="0.033"/>
+  <testcase name="placeOrder emits OrderPlacedSuccess on successful creation" classname="com.cravexa.CheckoutViewModelTest" time="0.005"/>
+  <testcase name="selecting payment method updates state" classname="com.cravexa.CheckoutViewModelTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

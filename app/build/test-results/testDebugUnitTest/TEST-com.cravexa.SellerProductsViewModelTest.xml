@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.cravexa.SellerProductsViewModelTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-09-01T08:29:09.420Z" hostname="NARAs-Laptop.local" time="0.054">
+  <properties/>
+  <testcase name="uiState emits all products by default" classname="com.cravexa.SellerProductsViewModelTest" time="0.042"/>
+  <testcase name="updateStock calls updateProductStockUseCase" classname="com.cravexa.SellerProductsViewModelTest" time="0.004"/>
+  <testcase name="deleteProduct calls deleteSellerProductUseCase" classname="com.cravexa.SellerProductsViewModelTest" time="0.003"/>
+  <testcase name="filter LOW_STOCK returns only products with stock in low stock range" classname="com.cravexa.SellerProductsViewModelTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

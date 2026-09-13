@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.cravexa.LoginViewModelTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-08-31T07:29:47.147Z" hostname="NARAs-Laptop.local" time="0.019">
+  <properties/>
+  <testcase name="login with error response updates uiState to Error" classname="com.cravexa.LoginViewModelTest" time="0.016"/>
+  <testcase name="login with empty password sets passwordError and does not call usecase" classname="com.cravexa.LoginViewModelTest" time="0.001"/>
+  <testcase name="login with valid credentials and successful response updates uiState to Success" classname="com.cravexa.LoginViewModelTest" time="0.002"/>
+  <testcase name="login with invalid email sets emailError and does not call usecase" classname="com.cravexa.LoginViewModelTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

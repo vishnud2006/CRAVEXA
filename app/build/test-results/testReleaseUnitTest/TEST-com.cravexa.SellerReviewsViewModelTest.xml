@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.cravexa.SellerReviewsViewModelTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-08-31T07:29:47.484Z" hostname="NARAs-Laptop.local" time="0.022">
+  <properties/>
+  <testcase name="uiState emits Success with reviews and calculated average rating" classname="com.cravexa.SellerReviewsViewModelTest" time="0.02"/>
+  <testcase name="submitReply calls replyToReviewUseCase" classname="com.cravexa.SellerReviewsViewModelTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

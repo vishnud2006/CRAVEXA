@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.cravexa.WishlistViewModelTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-08-31T07:29:47.539Z" hostname="NARAs-Laptop.local" time="0.006">
-  <properties/>
-  <testcase name="moveToCart adds item to cart and removes from wishlist" classname="com.cravexa.WishlistViewModelTest" time="0.005"/>
-  <testcase name="wishlistProducts flow emits current saved products" classname="com.cravexa.WishlistViewModelTest" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

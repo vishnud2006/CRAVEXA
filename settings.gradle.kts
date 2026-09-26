@@ -20,5 +20,8 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "CRAVEXA"
-include(":app")
 
+// Frontend Android Application Module
+// Maps Gradle's :app module to the 'frontend' directory
+include(":app")
+project(":app").projectDir = file("frontend")

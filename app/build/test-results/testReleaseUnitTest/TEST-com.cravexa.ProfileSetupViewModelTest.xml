@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.cravexa.ProfileSetupViewModelTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-08-31T07:29:47.268Z" hostname="NARAs-Laptop.local" time="0.02">
-  <properties/>
-  <testcase name="saveProfile with invalid customer data sets validation errors" classname="com.cravexa.ProfileSetupViewModelTest" time="0.017"/>
-  <testcase name="saveProfile with valid customer data saves profile and updates to Success" classname="com.cravexa.ProfileSetupViewModelTest" time="0.003"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

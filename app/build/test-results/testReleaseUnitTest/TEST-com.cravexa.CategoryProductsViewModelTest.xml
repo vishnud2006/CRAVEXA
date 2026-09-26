@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.cravexa.CategoryProductsViewModelTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-08-31T07:29:47.051Z" hostname="NARAs-Laptop.local" time="0.037">
-  <properties/>
-  <testcase name="setSortOption sorts products by price low to high" classname="com.cravexa.CategoryProductsViewModelTest" time="0.034"/>
-  <testcase name="loadCategoryData loads products and category info" classname="com.cravexa.CategoryProductsViewModelTest" time="0.002"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

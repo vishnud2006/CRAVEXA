@@ -23,8 +23,14 @@ class CartService:
             cart = Cart(customer_id=user_id)
             db.add(cart)
             await db.commit()
-            await db.refresh(cart)
-            cart.items = []
+            result = await db.execute(
+                select(Cart)
+                .options(
+                    selectinload(Cart.items).selectinload(CartItem.product).selectinload(Product.images)
+                )
+                .where(Cart.id == cart.id)
+            )
+            cart = result.scalar_one()
         return cart
 
     @staticmethod
@@ -78,9 +84,12 @@ class CartService:
             db.add(cart_item)
 
         await db.commit()
-        await db.refresh(cart_item)
-        cart_item.product = product
-        return cart_item
+        res = await db.execute(
+            select(CartItem)
+            .options(selectinload(CartItem.product).selectinload(Product.images))
+            .where(CartItem.id == cart_item.id)
+        )
+        return res.scalar_one()
 
     @staticmethod
     async def update_item(
@@ -111,8 +120,12 @@ class CartService:
 
         item.quantity = quantity
         await db.commit()
-        await db.refresh(item)
-        return item
+        res = await db.execute(
+            select(CartItem)
+            .options(selectinload(CartItem.product).selectinload(Product.images))
+            .where(CartItem.id == item.id)
+        )
+        return res.scalar_one()
 
     @staticmethod
     async def remove_item(

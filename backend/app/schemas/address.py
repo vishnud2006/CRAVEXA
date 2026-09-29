@@ -7,9 +7,11 @@ from app.models.address import AddressType
 class AddressBase(BaseModel):
     full_name: str
     phone: str
-    house: str
-    street: str
-    area: str
+    house: Optional[str] = ""
+    street: Optional[str] = ""
+    area: Optional[str] = ""
+    address_line1: Optional[str] = None
+    address_line2: Optional[str] = None
     landmark: Optional[str] = None
     city: str
     state: str

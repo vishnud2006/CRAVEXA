@@ -64,5 +64,7 @@ async def update_product_status(
 
     product.status = status_update.status
     await db.commit()
-    await db.refresh(product)
-    return product
+    res = await db.execute(
+        select(Product).options(selectinload(Product.images)).where(Product.id == product_id)
+    )
+    return res.scalar_one()

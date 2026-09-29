@@ -35,8 +35,9 @@ class ProductService:
             )
 
         slug = data.slug.strip() if data.slug else ProductService.slugify(data.name)
+        seller_id = seller.id if hasattr(seller, "id") else int(seller)
         product = Product(
-            seller_id=seller.id,
+            seller_id=seller_id,
             category_id=data.category_id,
             name=data.name.strip(),
             slug=slug,
@@ -65,8 +66,10 @@ class ProductService:
                 db.add(p_img)
 
         await db.commit()
-        await db.refresh(product)
-        return product
+        res = await db.execute(
+            select(Product).options(selectinload(Product.images)).where(Product.id == product.id)
+        )
+        return res.scalar_one()
 
     @staticmethod
     async def update_seller_product(
@@ -86,7 +89,8 @@ class ProductService:
                 detail="Product not found",
             )
 
-        if product.seller_id != seller.id:
+        seller_id = seller.id if hasattr(seller, "id") else int(seller)
+        if product.seller_id != seller_id:
             raise HTTPException(
                 status_code=status.HTTP_403_FORBIDDEN,
                 detail="Forbidden: You do not have permission to modify this product",
@@ -111,14 +115,16 @@ class ProductService:
                 db.add(p_img)
 
         await db.commit()
-        await db.refresh(product)
-        return product
+        res = await db.execute(
+            select(Product).options(selectinload(Product.images)).where(Product.id == product.id)
+        )
+        return res.scalar_one()
 
     @staticmethod
     async def delete_seller_product(
         db: AsyncSession,
         product_id: int,
-        seller: SellerProfile
+        seller: object
     ) -> None:
         result = await db.execute(
             select(Product).where(Product.id == product_id)
@@ -131,7 +137,8 @@ class ProductService:
                 detail="Product not found",
             )
 
-        if product.seller_id != seller.id:
+        seller_id = seller.id if hasattr(seller, "id") else int(seller)
+        if product.seller_id != seller_id:
             raise HTTPException(
                 status_code=status.HTTP_403_FORBIDDEN,
                 detail="Forbidden: You do not have permission to delete this product",
@@ -139,3 +146,6 @@ class ProductService:
 
         await db.delete(product)
         await db.commit()
+
+    update_product = update_seller_product
+    delete_product = delete_seller_product

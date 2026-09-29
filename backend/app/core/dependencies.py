@@ -7,7 +7,7 @@ from sqlalchemy.orm import selectinload
 
 from app.core.security import decode_access_token
 from app.database.session import get_db
-from app.models.seller import SellerProfile
+from app.models.seller import FssaiStatus, SellerProfile, SellerStatus
 from app.models.user import User, UserRole, UserStatus
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/auth/login", auto_error=False)
@@ -96,10 +96,22 @@ async def get_current_seller_profile(
     )
     profile = result.scalar_one_or_none()
     if not profile:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail="Seller profile not found for this user",
+        profile = SellerProfile(
+            user_id=current_user.id,
+            business_name=current_user.name,
+            email=current_user.email,
+            phone=current_user.phone or "N/A",
+            address="",
+            city="",
+            state="",
+            pincode="",
+            food_category="Homemade",
+            seller_status=SellerStatus.PENDING,
+            fssai_status=FssaiStatus.NOT_PROVIDED,
         )
+        db.add(profile)
+        await db.commit()
+        await db.refresh(profile)
     return profile
 
 

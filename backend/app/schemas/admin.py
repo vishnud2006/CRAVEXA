@@ -3,6 +3,7 @@ from pydantic import BaseModel
 
 
 class AdminDashboardStats(BaseModel):
+    total_users: int = 0
     total_customers: int
     total_sellers: int
     pending_sellers: int

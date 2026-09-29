@@ -6,6 +6,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.config import settings
 from app.core.security import get_password_hash, verify_password
+from app.models.seller import FssaiStatus, SellerProfile, SellerStatus
 from app.models.user import User, UserRole, UserStatus
 from app.schemas.auth import ChangePasswordRequest, RegisterRequest
 
@@ -54,6 +55,24 @@ class AuthService:
             profile_completed=False,
         )
         db.add(new_user)
+        await db.flush()
+
+        if new_user.role == UserRole.SELLER:
+            seller_prof = SellerProfile(
+                user_id=new_user.id,
+                business_name=req.business_name or new_user.name,
+                email=new_user.email,
+                phone=req.phone or new_user.phone or "N/A",
+                city=req.city or "",
+                state=req.state or "",
+                pincode=req.pincode or "",
+                food_category=req.food_category or "Homemade",
+                address=req.address or "",
+                seller_status=SellerStatus.PENDING,
+                fssai_status=FssaiStatus.NOT_PROVIDED,
+            )
+            db.add(seller_prof)
+
         await db.commit()
         await db.refresh(new_user)
         return new_user

@@ -21,6 +21,12 @@ class RegisterRequest(BaseModel):
     name: str
     phone: Optional[str] = None
     role: UserRole = UserRole.CUSTOMER
+    business_name: Optional[str] = None
+    city: Optional[str] = None
+    state: Optional[str] = None
+    pincode: Optional[str] = None
+    food_category: Optional[str] = None
+    address: Optional[str] = None
 
     @field_validator("role")
     @classmethod

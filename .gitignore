@@ -16,3 +16,18 @@ local.properties
 *.apk
 *.aab
 
+# Python & Backend
+__pycache__/
+*.py[cod]
+*$py.class
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+.pytest_cache/
+.coverage
+htmlcov/
+backend/.env
+backend/.env.local

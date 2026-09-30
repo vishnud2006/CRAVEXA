@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.RowScope
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -105,9 +106,7 @@ fun CravexaHomeHeader(
                     Image(
                         painter = painterResource(id = R.drawable.cravexa_logo),
                         contentDescription = "CRAVEXA Logo",
-                        modifier = Modifier
-                            .size(38.dp)
-                            .clip(androidx.compose.foundation.shape.RoundedCornerShape(8.dp))
+                        modifier = Modifier.size(34.dp)
                     )
                     Spacer(modifier = Modifier.width(8.dp))
                     Column {

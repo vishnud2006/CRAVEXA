@@ -102,13 +102,11 @@ fun LoginScreen(
         ) {
             Spacer(modifier = Modifier.height(16.dp))
 
-            // Official CRAVEXA Logo & Branding
+            // Official CRAVEXA Logo & Branding (Neatly adjusted)
             Image(
                 painter = painterResource(id = R.drawable.cravexa_logo),
                 contentDescription = "CRAVEXA Logo",
-                modifier = Modifier
-                    .size(76.dp)
-                    .clip(androidx.compose.foundation.shape.RoundedCornerShape(16.dp))
+                modifier = Modifier.size(76.dp)
             )
 
             Spacer(modifier = Modifier.height(12.dp))

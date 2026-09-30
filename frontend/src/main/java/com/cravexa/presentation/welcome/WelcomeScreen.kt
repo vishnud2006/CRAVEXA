@@ -68,13 +68,11 @@ fun WelcomeScreen(
                 horizontalAlignment = Alignment.CenterHorizontally,
                 modifier = Modifier.fillMaxWidth()
             ) {
-                // Official CRAVEXA Logo
+                // Official CRAVEXA Logo (Neatly adjusted)
                 Image(
                     painter = painterResource(id = R.drawable.cravexa_logo),
                     contentDescription = "CRAVEXA Logo",
-                    modifier = Modifier
-                        .size(110.dp)
-                        .clip(RoundedCornerShape(24.dp))
+                    modifier = Modifier.size(96.dp)
                 )
 
                 Spacer(modifier = Modifier.height(16.dp))

@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
@@ -95,13 +96,11 @@ fun SplashScreen(
                 .scale(scale.value)
                 .alpha(alpha.value)
         ) {
-            // Official CRAVEXA Brand Logo
+            // Official CRAVEXA Brand Logo (Neatly adjusted, seamlessly floating)
             Image(
                 painter = painterResource(id = R.drawable.cravexa_logo),
                 contentDescription = stringResource(id = R.string.app_name),
-                modifier = Modifier
-                    .size(150.dp)
-                    .clip(RoundedCornerShape(24.dp))
+                modifier = Modifier.size(116.dp)
             )
 
             Spacer(modifier = Modifier.height(24.dp))
